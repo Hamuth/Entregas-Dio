@@ -2,16 +2,26 @@ html, body {
     margin: 0;
 }
 body {
-    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    background-color: #01051d;
     display: flex;
     justify-content: center;
+    font-family: tahoma;
 }
 
 .wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 40fr;
+    /* 1 fração para o menu, 40 frações para o conteúdo */
+    grid-gap: 0px;
+    /* espaçamento entre os elementos */
+    height: 100dvh;
+    /* altura total da página */
+    grid-template-rows: 1fr auto 100px;
+    /* ajuste a altura do grid para acomodar o footer */
 }
 .main {
     display: flex;
